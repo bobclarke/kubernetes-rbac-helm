@@ -4,8 +4,8 @@
 Work in progress 
 
 # Notes
-* Enable RBAC on our k8s cluster (if using minikube this is done as follows: __minikube start --extra-config=apiserver.Authorization.Mode=RBAC__) 
-* Add a service user bind that user to the k8s cluster-admin role as follows:
+* Enable RBAC on our k8s cluster (if using minikube this is done as follows: `__minikube start --extra-config=apiserver.Authorization.Mode=RBAC__`) 
+* Add a service user bind that user to the k8s cluster-admin role by running `kubectl create -f` on the manifest below:
 ```
 ---
 apiVersion: v1
@@ -28,4 +28,5 @@ subjects:
     namespace: kube-system
 
 ```
+* Next, initialise heml with `helm init --service-account tiller `
 
