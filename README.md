@@ -1,7 +1,5 @@
-# Experimenting with Helm to manage RBAC roles and rolebindings
-
-
-Work in progress 
+## Experimenting with Helm to manage RBAC roles and rolebindings
+## Work in progress
 
 # Notes
 * Enable RBAC on our k8s cluster (if using minikube this is done as follows: `__minikube start --extra-config=apiserver.Authorization.Mode=RBAC__`) 
