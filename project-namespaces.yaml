@@ -1,0 +1,15 @@
+---
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: project-001
+---
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: project-002
+---
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: project-003
