@@ -2,7 +2,10 @@
 ## Work in progress
 
 # Notes
-* Enable RBAC on our k8s cluster (if using minikube this is done as follows: `__minikube start --extra-config=apiserver.Authorization.Mode=RBAC__`) 
+* Enable RBAC on our k8s cluster. If using minikube this is done as follows: 
+```
+minikube start --extra-config=apiserver.Authorization.Mode=RBAC
+``` 
 * Add a service user bind that user to the k8s cluster-admin role by running `kubectl create -f` on the manifest below:
 ```
 ---
