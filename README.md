@@ -29,4 +29,9 @@ subjects:
 
 ```
 * Next, initialise heml with `helm init --service-account tiller `
+* Create a couple of namespaces on your cluster for each test project. I'm using project-001, project 002 etc
+* Now you're ready to run this test chart. Clone this repo and run 
+```
+helm upgrade project-001 rbac-test --install --values rbac-test/project/project.yaml --dry-run --debug
+```
 
